@@ -10,3 +10,10 @@ Ver.1.2をベースに更新。収入・支出・貯金の3カード。
 - 同じオリジン（プロトコル・ホスト・ポート）のブラウザで開いてください。公開先GitHub Pagesはlocalhostと別保存領域です。
 - 初回アップデート前に設定画面からJSONバックアップ推奨。
 - GitHub Pagesで更新する場合は同名ファイルを置換してcommit/push。Service Workerキャッシュ名もv1.3に変更済み。
+
+
+## v1.3.1 PWA update fix
+- Network-first service worker for same-scope app resources, cached offline fallback.
+- Service worker checks for updates at startup and when returning to the app.
+- Reloads the app after the new worker takes control.
+- Keeps localStorage key `my-finance-v1` unchanged. Back up JSON before deploying.
